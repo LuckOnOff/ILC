@@ -96,6 +96,7 @@ ul {
     font-size: 1.1rem;
     letter-spacing: 0.48px;
     padding-left: 4.6rem;
+    white-space: nowrap;
 }
 .header-nav-panel__items:first-child {
     padding-left: 0px;
@@ -152,7 +153,7 @@ ul {
 .main-header-right-sect-header-img {
     position: relative;
     z-index: 2;
-    background-color: #FFF;
+    background: #F4F7FA;
     border-radius: 50%;
 }
 .main-header-right-sect-income span:first-child {
@@ -183,22 +184,19 @@ ul {
     z-index: 2;
     background: #F4F7FA;
     border-radius: 10px;
-    margin: 2rem 4rem;
     margin-top: -4rem;
     box-shadow: 0px 4px 100px 0px rgba(208, 218, 227, 0.57);
     margin-right: 3rem;
+    color: #303030;
+    line-height: 1.6rem;
 }
 .main-header-right-sect-flex-cont-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 2ren;
+    margin: 1.6rem;
     margin-left: 3rem;
-}
-.main-header-right-sect-flex-cont-1-text {
-    color: #303030;
-    line-height: 1.6rem;
 }
 .main-header-right-sect-flex-cont-2 {
     display: flex;
@@ -207,10 +205,6 @@ ul {
     align-items: flex-start;
     margin: 2rem;
 }
-.main-header-right-sect-flex-cont-2-text {
-    color: #303030;
-    line-height: 1.6rem;
-}
 .main-header-right-sect-flex-cont-3 {
     display: flex;
     flex-direction: column;
@@ -218,10 +212,6 @@ ul {
     align-items: flex-start;
     margin: 2rem;
     margin-right: 3rem;
-}
-.main-header-right-sect-flex-cont-3-text {
-    color: #303030;
-    line-height: 1.6rem;
 }
 .main-about {
     display: flex;
@@ -446,6 +436,7 @@ ul {
     border-radius: 10px;
     background: #FFF;
     margin-right: 16px;
+    white-space: nowrap;
 }
 .main-support-column-2-gif {
     background: url(img/main-support-startup.gif) lightgray 50% / cover no-repeat;
@@ -473,6 +464,7 @@ ul {
     height: 344px;
     border-radius: 10px;
     background: #FFF;
+    white-space: nowrap;
 }
 .main-support-column-3-gif {
     background: url(img/main-support-family.gif) lightgray 50% / cover no-repeat;
@@ -489,7 +481,7 @@ ul {
 .main-support-column-3-subtitle {
     color: #404040;
     line-height: 21px;
-    padding: 0 32px 32px;
+    padding: 0 32px 32px 18px;
 }
 .main-advantages-container {
     width: 1440px;
@@ -559,11 +551,11 @@ ul {
     padding: 5px 20px 7px;
 }
 .main-advantages-help-button-item {
-    width: 148.009px;
-    height: 46.153px;
+    width: 148px;
+    height: 46px;
     border-radius: 7.9px;
     font-size: 15px;
-    line-height: 14.323px;
+    line-height: 14px;
 }
 .main-advantages-description {
     display: flex;
@@ -608,6 +600,7 @@ ul {
     position: relative;
     top: -4rem;
     z-index: 1;
+    color: #404040;
 }
 .main-advantages-flexbox-columns-1 {
     display: flex;
@@ -623,14 +616,12 @@ ul {
     margin-right: 19px;
 }
 .main-advantages-flexbox-columns-1-title {
-    color: #404040;
     font-weight: 600;
     line-height: 20px;
     padding-top: 16px;
     padding-bottom: 16px;
 }
 .main-advantages-flexbox-columns-1-subtitle {
-    color: #404040;
     width: 150px;
     height: 144px;
     line-height: 21px;
@@ -651,14 +642,12 @@ ul {
 .main-advantages-flexbox-columns-2-title {
     padding-top: 16px;
     padding-bottom: 16px;
-    color: #404040;
     font-weight: 600;
     line-height: 20px;
 }
 .main-advantages-flexbox-columns-2-subtitle {
     width: 165px;
     height: 144px;
-    color: #404040;
     line-height: 21px;
 }
 .main-advantages-flexbox-columns-3 {
@@ -677,14 +666,12 @@ ul {
 .main-advantages-flexbox-columns-3-title {
     padding-top: 16px;
     padding-bottom: 16px;
-    color: #404040;
     font-weight: 600;
     line-height: 20px;
 }
 .main-advantages-flexbox-columns-3-subtitle {
     width: 170px;
     height: 144px;
-    color: #404040;
     line-height: 21px;
 }
 .main-advantages-flexbox-columns-4 {
@@ -716,14 +703,12 @@ ul {
 .main-advantages-flexbox-columns-4-title {
     padding-top: 16px;
     padding-bottom: 16px;
-    color: #404040;
     font-weight: 600;
     line-height: 20px;
 }
 .main-advantages-flexbox-columns-4-subtitle {
     width: 165px;
     height: 144px;
-    color: #404040;
     line-height: 21px;
 }
 .main-advantages-flexbox-columns-5 {
@@ -742,14 +727,11 @@ ul {
 .main-advantages-flexbox-columns-5-title {
     padding-top: 16px;
     padding-bottom: 16px;
-    color: #404040;
     font-weight: 600;
     line-height: 20px;
 }
 .main-advantages-flexbox-columns-5-subtitle {
     width: 165px;
-    height: 129px;
-    color: #404040;
     line-height: 21px;
 }
 .main-rates-title {
@@ -1419,8 +1401,6 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1920px;
-    max-width: 100%;
     margin: 0 auto;
     height: 287px;
     background: #273895;
@@ -1682,4 +1662,40 @@ ul {
     color: #7A7A7A;
     line-height: 20px;
     font-size: 14px;
+}
+@media screen and (max-width: 1270px) {
+    .header-left-sec {
+        flex-direction: column;
+        margin-right: 20%;
+    }
+    .header-left-sec a {
+        margin-bottom: 10%;
+    }
+    .header-info {
+        padding-left: 9.5%;
+    }
+    .header-nav-panel {
+        flex-wrap: wrap;
+    }
+    .header-nav-panel li {
+        margin-bottom: 3%;
+    }
+    .main-header-flexbox-1 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    .main-header-left-sect {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-header-right-sect-main-img {
+        left: 10%;
+    }
+    .main-right-sect-group {
+        margin-top: 10%;
+    }
 }
