@@ -1818,12 +1818,117 @@ ul {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 3% 5% 0 6%;
+        margin: 3% 5% 0 10%;
     }
     .main-forecast-right {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 3% 5% 0 6%;
+        margin: 3% 5% 0 10%;
+    }
+    .main-rates-plan-free {
+        max-width: 513px;
+        justify-content: center;
+    }
+    .main-rates-plan-free-name {
+        margin-top: 1%;
+    }
+    .main-rates-plan-free-name-button {
+        height: 40px;
+    }
+    .main-rates-plans {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .main-partners-img {
+        max-width: 100%;
+    }
+    .main-partners-1 {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        margin-left: 2%;
+        margin-right: 2%;
+        height: 100%;
+        padding: 1% 4% 1% 4%;
+        max-width: 547px;
+    }
+    .main-partners-1 div {
+        margin-left: 0;
+    }
+    .main-partners-2 {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        margin-left: 2%;
+        margin-right: 2%;
+        height: 100%;
+        padding: 1% 4% 1% 4%;
+        max-width: 547px;
+    }
+    .main-partners-2 div {
+        margin-left: 0;
+    }
+    .main-partners-3 {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        margin-left: 2%;
+        margin-right: 2%;
+        height: 100%;
+        padding: 1% 4% 1% 4%;
+        max-width: 547px;
+    }
+    .main-partners-3 div {
+        margin-left: 0;
+    }
+    .main-partners-4 {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        margin-left: 2%;
+        margin-right: 2%;
+        height: 100%;
+        padding: 1% 4% 1% 4%;
+        max-width: 547px;
+    }
+    .main-partners-4 div {
+        margin-left: 0;
+    }
+    .main-management {
+        margin: 0 5% 5% 5%;
+    }
+    .main-management-text {
+        left: 19rem;
+    }
+    .main-management-text-into-img {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10% 3% 10%;
+    }
+    .main-management-people {
+        margin-top: 20%;
+    }
+    .footer-block {
+        flex-direction: column;
+    }
+    .footer-basement {
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+    .footer-basement-right-sect {
+        text-align: center;
+        margin: 0;
+        margin: 1%;
+        width: 100%;
+    }
+    .footer-basement-left-sect {
+        text-align: center;
+        margin: 1%;
+        width: 100%;
     }
 }
