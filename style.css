@@ -273,8 +273,8 @@ ul {
     flex-direction: column;
     margin-right: 1.5rem;
     margin-bottom: 1.06rem;
-    width: 13.5rem;
-    height: 9.75rem;
+    width: 192px;
+    height: 171px;
     border-radius: 10px;
     background: linear-gradient(200deg, #FFF 0%, #F4F9FF 100%);
     box-shadow: 0px 4px 100px 0px rgba(208, 218, 227, 0.57);
@@ -331,7 +331,7 @@ ul {
 }
 .main-about-right-sect-column-2-subtitle {
     width: 100%;
-    padding: 12px 32px 32px 32px;
+    padding: 0px 32px 32px 32px;
     color: #404040;
     line-height: 21px;
 }
@@ -368,7 +368,7 @@ ul {
 }
 .main-about-right-sect-column-3-subtitle {
     width: 100%;
-    padding: 12px 32px 32px 32px;
+    padding: 0px 32px 32px 32px;
     color: #404040;
     line-height: 21px;
 }
@@ -768,6 +768,7 @@ ul {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0 8%;
 }
 .main-data-rates {
     display: flex;
@@ -828,8 +829,8 @@ ul {
 }
 .main-rates-plan-free-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
     margin-left: 50px;
 }
 .main-rates-plan-free-list-item {
@@ -841,7 +842,7 @@ ul {
     margin-top: 16px;
 }
 .main-rates-plan-free-list-item:nth-child(2) {
-    margin-top: 16px;
+    margin-top: 20px;
 }
 .main-rates-plan-free-list-item:nth-child(4) {
     margin-top: 7px;
@@ -1115,6 +1116,7 @@ ul {
 }
 .main-partners-img {
     display: flex;
+    overflow: hidden;
     margin: 0 auto;
     background: linear-gradient(90deg, #273895 0%, rgba(26, 39, 105, 0.00) 100%), url(img/main-partners-img.png), lightgray -22.532px 0.21px / 102.26% 99.938% no-repeat;
     width: 1640px;
@@ -1152,6 +1154,7 @@ ul {
     flex-direction: column;
     align-items: center;
     margin-bottom: 16px;
+    margin: 0 8% 16px 8%;
 }
 .main-partners-rows-into div {
     margin-bottom: 22px;
@@ -1690,6 +1693,12 @@ ul {
     }
 }
 @media screen and (max-width: 1270px) {
+    .main-rates-plan-free-list-item {
+        line-height: normal;
+    }
+    .main-start-title {
+        margin-top: 80px;
+    }
     .header-left-sec {
         flex-direction: column;
         margin-right: 20%;
@@ -1792,14 +1801,14 @@ ul {
         flex-direction: column;
         justify-content: center;
         width: 312px;
-        height: 350px;
+        height: 250px;
     }
     .main-start-learning {
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 312px;
-        height: 350px;
+        height: 250px;
         order: 2;
     }
     .main-start-result {
@@ -1813,7 +1822,7 @@ ul {
         justify-content: center;
         order: 3;
         width: 312px;
-        height: 350px;
+        height: 250px;
         padding: 32px;
     }
     .main-support-flexbox-columns {
@@ -1869,11 +1878,18 @@ ul {
     }
     .main-partners-img {
         max-width: 100%;
+        background: linear-gradient(90deg, #273895 0%, rgba(26, 39, 105, 0.00) 100%), url(img/main-partners-img.png), lightgray -22.532px 0.21px / 102.26% 99.938% no-repeat;
+        background-position: left;
+    }
+    .main-partners-into {
+        margin-left: 12rem;
+    }
+    .main-partners-img::before {
+        margin-left: 11rem;
     }
     .main-partners-1 {
         flex-direction: column;
         align-items: center;
-        width: auto;
         margin-left: 2%;
         margin-right: 2%;
         height: 100%;
@@ -1886,7 +1902,6 @@ ul {
     .main-partners-2 {
         flex-direction: column;
         align-items: center;
-        width: auto;
         margin-left: 2%;
         margin-right: 2%;
         height: 100%;
@@ -1899,7 +1914,6 @@ ul {
     .main-partners-3 {
         flex-direction: column;
         align-items: center;
-        width: auto;
         margin-left: 2%;
         margin-right: 2%;
         height: 100%;
@@ -1912,7 +1926,6 @@ ul {
     .main-partners-4 {
         flex-direction: column;
         align-items: center;
-        width: auto;
         margin-left: 2%;
         margin-right: 2%;
         height: 100%;
@@ -1963,6 +1976,17 @@ ul {
         width: 100%;
     }
 }
+@media screen and (max-width: 1080px) {
+    .main-support-column-1 {
+        margin-right: 0;
+    }
+    .main-support-column-2 {
+        margin-right: 0;
+    }
+    .main-support-column-3 {
+        margin-right: 0;
+    }
+}
 @media screen and (max-width: 930px) {
     .header-nav {
         display: none;
@@ -2001,6 +2025,39 @@ ul {
     }    
 }
 @media screen and (max-width: 800px) {
+    .main-support {
+        margin: 48px 10% 0 10%;
+    }
+    .main-header-left-sect-name {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+    .main-header-left-sect-subname {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    .main-header-right-sect-flex-cont {
+        flex-direction: column;
+        margin: -4rem 5rem 0 5rem;
+        max-width: 100%;
+        align-items: normal;
+    }
+    .main-header-right-sect-flex-cont-1 {
+        margin: 2rem;
+    }
+    .main-header-right-sect-header-img {
+        width: 30%;
+    }
+    .main-header-right-sect-income {
+        margin-top: -6.7rem;
+        margin-right: 0.2rem;
+    }
+    .main-header-right-sect-income span {
+        font-size: 13px;
+    }
+    .main-header-right-sect-main-img{
+        width: 75%;
+    }
     .main-management {
         margin-bottom: 10%;
     }
@@ -2032,12 +2089,131 @@ ul {
     .main-start-into {
         grid-template-columns: auto;
         grid-template-rows: auto;
-        margin-bottom: 30%;
+        margin-bottom: 10rem;
     }
     .main-partners-img::before {
         margin-left: 10rem;
     }
     .main-partners-into {
         margin-left: 10rem;
+    }
+}
+@media screen and (max-width: 670px) {
+    .main-about-right-sect-column-1 {
+        width: 167px;
+        height: 135px;
+        margin-left: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    .main-about-right-sect-column-1-title {
+        padding-top: 0;
+        font-size: 1.5rem;
+    }
+    .main-about-right-sect-column-1-subtitle {
+        font-size: 14px;
+        padding: 0;
+        padding-left: 2rem;
+    }
+    .main-about-right-sect-column-2 {
+        width: 147px;
+        height: 106px;
+        margin-top: 26px;
+    }
+    .main-about-right-sect-column-2::before {
+        width: 102px;
+        min-height: 102px;
+        background-position: center;
+        border-radius: 50%;
+        left: 5.8rem;
+        top: -2.8rem;
+    }
+    .main-about-right-sect-column-2-title {
+        padding-top: 0;
+        font-size: 1.5rem;
+    }
+    .main-about-right-sect-column-2-subtitle {
+        font-size: 14px;
+        padding: 0;
+        padding-left: 2rem;
+    }
+    .main-about-right-sect-column-3 {
+        width: 147px;
+        height: 106px;
+    }
+    .main-about-right-sect-column-3::before {
+        right: 8rem;
+    }
+    .main-about-right-sect-column-3-title {
+        padding-top: 0;
+        font-size: 1.5rem;
+    }
+    .main-about-right-sect-column-3-subtitle {
+        font-size: 14px;
+        padding: 0;
+        padding-left: 2rem;
+    }
+    .main-about-right-sect-column-4 {
+        width: 167px;
+        height: 135px;
+    }
+    .main-about-right-sect-column-4-title {
+        padding-top: 0;
+        font-size: 1.5rem;
+    }
+    .main-about-right-sect-column-4-subtitle {
+        font-size: 14px;
+        padding: 0;
+        padding-left: 2rem;
+    }
+    .main-about {
+        margin: 6rem 0;
+    }
+    .main-about-left-sect-title {
+        font-size: 1.5rem;
+    }
+    .main-about-left-sect-title-subtitle {
+        font-size: 15px;
+    }
+    .main-partners-img-title {
+        font-size: 1.5rem;
+    }
+    .main-partners-img-subtitle {
+        font-size: 14px;
+    }
+    .main-partners-img::before {
+        width: 100%;
+        height: 365px;
+        background-position: center;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .main-partners-into {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-top: 3.5rem;
+    }
+    .main-partners-img {
+        display: flex;
+        justify-content: center;
+        height: 300px;
+        background: #1b2975;
+    }
+    .main-rates-title {
+        font-size: 26px;
+    }
+    .main-rates-subtitle {
+        font-size: 16px;
+    }
+    .main-rates-plans-1-month {
+        font-size: 16px;
+    }
+    .main-rates-plans-1-year {
+        font-size: 16px;
+    }
+    .main-rates-plan-free-price {
+        font-size: 18px;
     }
 }
