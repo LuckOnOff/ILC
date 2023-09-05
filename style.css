@@ -41,7 +41,8 @@ ul {
 .header-left-sec a {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    max-width: 200px;
 }
 .header-img-text {
     margin-left: -4.2rem;
@@ -2215,5 +2216,213 @@ ul {
     }
     .main-rates-plan-free-price {
         font-size: 18px;
+    }
+    .main-rates-plan-free-more-info-item {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .main-rates-plan-free {
+        margin: 32px 5%;
+        width: auto;
+        flex-wrap: wrap;
+    }
+    .main-rates-plan-free-subtitle {
+        width: auto;
+    }
+    .main-rates-plan-free-list {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        margin-top: -1rem;
+        white-space: nowrap;
+    }
+    .main-rates-plan-free-list-item {
+        margin-bottom: 0.8rem;
+    }
+    .main-rates-plan-free-list-item:nth-child(2) {
+        margin-top: 0px;
+    }
+    .main-rates-plan-free-list-item:nth-child(4) {
+        margin-bottom: 0;
+    }
+    .main-rates-plan-free-more-info {
+        margin-top: 0.3rem;
+    }
+    .main-rates-plan-free-name-button {
+        margin-top: 0.3rem;
+    }
+    .main-rates-plans {
+        margin: 16px 5% 100px 5%;
+    }
+    .main-rates-plans-column-1 {
+        width: auto;
+        height: auto;
+    }
+    .main-rates-plans-column-1-more-info {
+        margin-top: 0;
+        line-height: 30px;
+    }
+    .main-rates-plans-column-1 * {
+        padding-bottom: 6px;
+    }
+    .main-rates-plans-column-into {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 44px;
+        margin-right: 24px;
+        margin-top: 5%;
+    }
+    .main-rates-plans-column-1-title {
+        font-size: 16px;
+    }
+    .main-rates-plans-column-1-button {
+        height: 40px;
+        margin-bottom: 2rem;
+    }
+    .main-rates-plans-column-2 {
+        width: auto;
+        height: auto;
+    }
+    .main-rates-plans-column-2-more-info {
+        margin-top: 0;
+        line-height: 20px;
+    }
+    .main-rates-plans-column-2 * {
+        padding-bottom: 6px;
+    }
+    .main-rates-plans-column-2-title {
+        font-size: 16px;
+    }
+    .main-rates-plans-column-2-button {
+        height: 40px;
+        margin-bottom: 2rem;
+    }
+    .main-rates-plans-column-3 {
+        width: auto;
+        height: auto;
+    }
+    .main-rates-plans-column-3-more-info {
+        margin-top: 0;
+        line-height: 30px;
+    }
+    .main-rates-plans-column-3 * {
+        padding-bottom: 6px;
+    }
+    .main-rates-plans-column-3-title {
+        font-size: 16px;
+    }
+    .main-rates-plans-column-3-button {
+        height: 40px;
+        margin-bottom: 2rem;
+    }
+    .main-rates-plans-column-4 {
+        width: auto;
+        height: auto;
+    }
+    .main-rates-plans-column-4 * {
+        padding-bottom: 6px;
+    }
+    .main-rates-plans-column-4-more-info {
+        margin-top: 0;
+        line-height: 30px;
+    }
+    .main-rates-plans-column-4-title {
+        font-size: 16px;
+    }
+    .main-rates-plans-column-4-button {
+        height: 40px;
+        margin-bottom: 2rem;
+    }
+    .main-partners-1 {
+        width: auto;
+    }
+    .main-partners-1 div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 300px;
+    }
+    .main-partners-2 {
+        width: auto;
+    }
+    .main-partners-2 div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 300px;
+    }
+    .main-partners-3 {
+        width: auto;
+    }
+    .main-partners-3 div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 300px;
+    }
+    .main-partners-4 {
+        width: auto;
+    }
+    .main-partners-4 div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 300px;
+    }
+    .main-forecast-title {
+        font-size: 22px;
+        margin: 0;
+    }
+    .main-forecast-column-1 {
+        margin-right: 2rem;
+    }
+    .main-forecast-column-2 {
+        margin: 0;
+    }
+    .main-forecast-column-3 {
+        margin: 0;
+        margin-right: 2rem;
+    }
+    .main-forecast-column-4 {
+        margin: 0;
+    }
+    .main-forecast-column-1-title {
+        font-size: 20px;
+    }
+    .main-forecast-column-2-title {
+        font-size: 20px;
+    }
+    .main-forecast-column-3-title {
+        font-size: 20px;
+    }
+    .main-forecast-column-4-title {
+        font-size: 20px;
+    }
+    .main-forecast-left {
+        margin: 0;
+        margin-top: 0.8rem;
+        margin-left: 3.5rem;
+    }
+    .main-forecast-right {
+        margin: 0;
+        margin-top: 0.8rem;
+    }
+    .main-management-text {
+        left: 30%;
+        top: 92%;
+        width: auto;
+        padding: 12px;
+    }
+    .footer-block {
+        margin: 16px 5% 16px 5%;
     }
 }
