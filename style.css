@@ -133,11 +133,14 @@ ul {
     font-size: 2.8rem;
     font-weight: 700;
     line-height: 3.4rem;
+    width: 733px;
 }
 .main-header-left-sect-subname {
     color: #303030;
     line-height: 1.3rem;
     margin-top: 1rem;
+    width: 547px;
+    height: 72px;
 }
 .main-header-left-sect-button {
     color: #FFF;
@@ -210,23 +213,29 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 1.6rem;
     margin-left: 3rem;
+}
+.main-header-right-sect-flex-cont-1-text {
+    width: 149px;
 }
 .main-header-right-sect-flex-cont-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 2rem;
+    margin: 1rem;
+}
+.main-header-right-sect-flex-cont-2-text {
+    width: 200px;
 }
 .main-header-right-sect-flex-cont-3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 2rem;
-    margin-right: 3rem;
+}
+.main-header-right-sect-flex-cont-3-text {
+    width: 179px;
 }
 .main-about {
     display: flex;
@@ -243,7 +252,7 @@ ul {
     display: flex;
     flex-direction: column;
     margin-left: 11.9rem;
-    white-space: nowrap;
+    width: 406px;
 }
 .main-about-left-sect-logo {
     width: 200px;
@@ -1424,7 +1433,7 @@ ul {
     margin: 0 auto;
     height: 287px;
     background: #273895;
-    margin-bottom: 144px;
+    margin-bottom: 0px;
 }
 .main-forecast-title {
     margin-right: 106px;
@@ -1442,9 +1451,7 @@ ul {
     margin-right: 3rem;
 }
 .main-forecast-column-1-title {
-    background: linear-gradient(90deg, rgba(70,20,232,1) 0%, rgba(188,167,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fff;
     font-size: 34px;
     font-weight: 700;
     line-height: 48px;
@@ -1462,9 +1469,7 @@ ul {
     margin-right: 3rem;
 }
 .main-forecast-column-2-title {
-    background: linear-gradient(90deg, rgba(70,20,232,1) 0%, rgba(188,167,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fff;
     font-size: 34px;
     font-weight: 700;
     line-height: 48px;
@@ -1482,9 +1487,7 @@ ul {
     margin-right: 3rem;
 }
 .main-forecast-column-3-title {
-    background: linear-gradient(90deg, rgba(70,20,232,1) 0%, rgba(188,167,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fff;
     font-size: 34px;
     font-weight: 700;
     line-height: 48px;
@@ -1502,9 +1505,7 @@ ul {
     margin-right: 80px;
 }
 .main-forecast-column-4-title {
-    background: linear-gradient(90deg, rgba(70,20,232,1) 0%, rgba(188,167,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fff;
     font-size: 34px;
     font-weight: 700;
     line-height: 48px;
@@ -1693,7 +1694,7 @@ ul {
         top: 0;
     }
 }
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1500px) {
     .main-rates-plan-free-list-item {
         line-height: normal;
     }
@@ -1705,7 +1706,7 @@ ul {
         margin-right: 20%;
     }
     .header-logo {
-        width: 50%;
+        width: 70%;
     }
     .header-img-text {
         margin-left: -2rem;
@@ -1760,7 +1761,7 @@ ul {
         text-align: center;
     }
     .main-about-left-sect-logo {
-        margin: 0 0 0 160px;
+        margin: 0 0 0 43%;
     }
     .main-about-right-sect {
         margin-right: 0;
@@ -1791,7 +1792,6 @@ ul {
     }
     .main-start-into {
         justify-content: center;
-        align-items: center;
         margin: 4% 0 5rem 0;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
@@ -1841,13 +1841,14 @@ ul {
     .main-advantages-description-sirius {
         margin-left: 1.5rem;
     }
-    .main-advantages-description-sirius-list {
-        white-space: nowrap;
+    .main-advantages-text {
+        margin: 0 10%;
     }
     .main-forecast {
         flex-direction: column;
         height: 100%;
         padding: 5% 0 5% 0;
+        margin-bottom: 90px;
     }
     .main-forecast-left {
         display: flex;
@@ -2032,10 +2033,12 @@ ul {
     .main-header-left-sect-name {
         font-size: 1.8rem;
         line-height: 2.5rem;
+        width: auto;
     }
     .main-header-left-sect-subname {
         font-size: 14px;
-        white-space: nowrap;
+        width: auto;
+        height: auto;
     }
     .main-header-right-sect-flex-cont {
         flex-direction: column;
@@ -2044,6 +2047,12 @@ ul {
         align-items: normal;
     }
     .main-header-right-sect-flex-cont-1 {
+        margin: 2rem;
+    }
+    .main-header-right-sect-flex-cont-2 {
+        margin: 2rem;
+    }
+    .main-header-right-sect-flex-cont-3 {
         margin: 2rem;
     }
     .main-header-right-sect-header-img {
@@ -2060,6 +2069,9 @@ ul {
         width: 75%;
     }
     .main-management {
+        margin-bottom: 10%;
+    }
+    .main-management-people {
         margin-bottom: 10%;
     }
     .main-management-text {
@@ -2097,6 +2109,9 @@ ul {
     }
     .main-partners-into {
         margin-left: 10rem;
+    }
+    .header-left-sec {
+        margin-right: 0;
     }
 }
 @media screen and (max-width: 670px) {
@@ -2424,5 +2439,519 @@ ul {
     }
     .footer-block {
         margin: 16px 5% 16px 5%;
+    }
+    .main-advantages-description {
+        margin: 0 5%;
+    }
+    .main-advantages-img-button {
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main-about-left-sect-title-subtitle {
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .main-advantages-description-subtitle {
+        width: auto;
+    }
+    .main-header-left-sect {
+        margin: 0 10%;
+    }
+    .main-header-flexbox-1 {
+        background: url(img/main-header-img-opacity.svg) no-repeat;
+        background-size: 100%;
+        margin: 10%;
+    }
+    .main-header-left-sect-name {
+        font-size: 24px;
+        text-align: center;
+    }
+    .main-header-left-sect-subname {
+        white-space: normal;
+        text-align: center;
+    }
+    .main-header-right-sect-main-img {
+        display: none;
+    }
+    .main-right-sect-group {
+        margin: 2rem auto 7rem auto;
+    }
+    .main-header-right-sect-header-img {
+        width: 130px;
+    }
+    .main-management-text-into-img img {
+        width: 15rem;
+    }
+    .main-management {
+        margin-bottom: 5rem;
+    }
+}
+@media screen and (max-width: 440px) {
+    .header-logo {
+        width: 120px;
+    }
+    .header-info {
+        display: none;
+    }
+    .header-left-sec {
+        margin: 1rem;
+    }
+    .main-header-left-sect-button {
+        width: 250px;
+    }
+    .header-img-text {
+        font-size: 12px;
+    }
+    .main-header-left-sect-name {
+        width: 280px;
+    }
+    .main-header-right-sect-flex-cont {
+        width: auto;
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+    .main-header-right-sect-flex-cont div {
+        align-items: center;
+    }
+    .main-about-left-sect-logo {
+        width: 140px;
+    }
+    .main-about-left-sect-title {
+        font-size: 14px;
+        line-height: normal;
+        margin-top: 1rem;
+    }
+    .main-about-left-sect-title-subtitle {
+        width: auto;
+    }
+    .main-about-right-sect-column-1 {
+        width: 140px;
+        height: 110px;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+    .main-about-right-sect-column-1-title {
+        font-size: 1.3rem;
+    }
+    .main-about-right-sect-column-1-subtitle {
+        padding: 0;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .main-about-right-sect-column-2 {
+        width: 124px;
+        height: 91px;
+        margin-top: 15px;
+    }
+    .main-about-right-sect-column-2::before {
+        width: 50px;
+        min-height: 50px;
+        background-position: center;
+        border-radius: 50%;
+        left: 5.5rem;
+        top: -2rem;
+    }
+    .main-about-right-sect-column-2-title {
+        padding-top: 0;
+        font-size: 1.5rem;
+    }
+    .main-about-right-sect-column-2-subtitle {
+        font-size: 14px;
+        padding: 0;
+        text-align: center;
+    }
+    .main-about-right-sect-column-3 {
+        width: 124px;
+        height: 91px;
+        margin-left: 50px;
+    }
+    .main-about-right-sect-column-3::before {
+        right: 6.5rem;
+    }
+    .main-about-right-sect-column-3-title {
+        padding-top: 0;
+        font-size: 1.5rem;
+    }
+    .main-about-right-sect-column-3-subtitle {
+        font-size: 14px;
+        padding: 0;
+        text-align: center;
+    }
+    .main-about-right-sect-column-4 {
+        width: 132px;
+        height: 110px;
+        margin-left: 0rem;
+        margin-bottom: 1rem;
+    }
+    .main-about-right-sect-column-4-title {
+        font-size: 1rem;
+    }
+    .main-about-right-sect-column-4-subtitle {
+        font-size: 0.8rem;
+        padding: 0;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .main-support-title {
+        font-size: 16px;
+    }
+    .main-support-column-1 {
+        width: 280px;
+        height: 281px;
+    }
+    .main-support-column-1-gif {
+        width: 115px;
+        height: 93px;
+    }
+    .main-support-column-1-title{
+        font-size: 16px;
+        padding: 0;
+        padding: 0 13rem 0.7rem 1rem;
+    }
+    .main-support-column-1-subtitle {
+        font-size: 14px;
+        padding: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .main-support-column-2 {
+        width: 280px;
+        height: 281px;
+    }
+    .main-support-column-2-gif {
+        width: 115px;
+        height: 93px;
+    }
+    .main-support-column-2-title{
+        font-size: 16px;
+        padding: 0;
+        padding: 0 7.7rem 0.7rem 1rem;
+    }
+    .main-support-column-2-subtitle {
+        font-size: 14px;
+        padding: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .main-support-column-3 {
+        width: 280px;
+        height: 281px;
+    }
+    .main-support-column-3-gif {
+        width: 115px;
+        height: 93px;
+    }
+    .main-support-column-3-title{
+        font-size: 16px;
+        padding: 0;
+        padding: 0 6.8rem 0.7rem 1rem;
+    }
+    .main-support-column-3-subtitle {
+        font-size: 14px;
+        padding: 0;
+        padding-right: 1.7rem;
+    }
+    .main-advantages-flexbox-columns-1{
+        width: 281px;
+        height: 272px;
+        margin-right: 0;
+        padding: 32px;
+    }
+    .main-advantages-flexbox-columns-1-subtitle {
+        width: auto;
+        height: auto;
+        font-size: 14px;
+    }
+    .main-advantages-flexbox-columns-2 {
+        width: 281px;
+        height: 272px;
+        margin-right: 0;
+        padding: 32px;
+    }
+    .main-advantages-flexbox-columns-2-subtitle {
+        width: auto;
+        height: auto;
+        font-size: 14px;
+    }
+    .main-advantages-flexbox-columns-3 {
+        width: 281px;
+        height: 272px;
+        margin-right: 0;
+        padding: 32px;
+    }
+    .main-advantages-flexbox-columns-3-subtitle {
+        width: auto;
+        height: auto;
+        font-size: 14px;
+    }
+    .main-advantages-flexbox-columns-4 {
+        width: 281px;
+        height: 272px;
+        margin-right: 0;
+        padding: 32px;
+    }
+    .main-advantages-flexbox-columns-4-subtitle {
+        width: auto;
+        height: auto;
+        font-size: 14px;
+    }
+    .main-advantages-flexbox-columns-5 {
+        width: 281px;
+        height: 272px;
+        margin-right: 0;
+        padding: 32px;
+    }
+    .main-advantages-flexbox-columns-5-subtitle {
+        width: auto;
+        height: auto;
+        font-size: 14px;
+    }
+    .main-rates-plan-free-subtitle {
+        margin: 0 5%;
+    }
+    .main-rates-plan-free-list-item {
+        font-size: 14px;
+        margin-right: 1rem;
+    }
+    .main-rates-plans-column-into {
+        margin-left: 48px;
+    }
+    .main-rates-plan-free {
+        margin: 2rem 5% 0 5%;
+        width: 300px;
+    }
+    .main-rates-plan-free-name {
+        font-size: 15px;
+    }
+    .main-rates-plan-free-price {
+        font-size: 16px;
+    }
+    .main-rates-plans-column-1 {
+        width: 300px;
+    }
+    .main-rates-plans-column-1-title {
+        font-size: 15px;
+    }
+    .main-rates-plans-column-1-subtitle {
+        font-size: 14px;
+    }
+    .main-rates-plans-column-1-more-info {
+        font-size: 14px;
+    }
+    .main-rates-plans-column-2 {
+        width: 300px;
+    }
+    .main-rates-plans-column-2-title {
+        text-align: center;
+        font-size: 15px;
+    }
+    .main-rates-plans-column-2-subtitle {
+        text-align: center;
+        font-size: 14px;
+    }
+    .main-rates-plans-column-2-more-info {
+        font-size: 14px;
+    }
+    .main-rates-plans-column-3 {
+        width: 300px;
+    }
+    .main-rates-plans-column-3-title {
+        font-size: 15px;
+    }
+    .main-rates-plans-column-3-subtitle {
+        font-size: 14px;
+    }
+    .main-rates-plans-column-3-more-info {
+        font-size: 14px;
+    }
+    .main-rates-plans-column-4 {
+        width: 300px;
+    }
+    .main-rates-plans-column-4-title {
+        text-align: center;
+    }
+    .main-rates-plans-column-4-title {
+        text-align: center;
+        font-size: 15px;
+    }
+    .main-rates-plans-column-4-subtitle {
+        text-align: center;
+        font-size: 14px;
+    }
+    .main-partners-1 {
+        height: 332px;
+    }
+    .main-partners-1 div {
+        width: auto;
+    }
+    .main-partners-1 img {
+        width: 136px;
+        height: 75px;
+    }
+    .main-partners-1-title {
+        font-size: 15px;
+    }
+    .main-partners-1-subtitle-1 {
+        font-size: 14px;
+        margin: 0 3%;
+    }
+    .main-partners-1-subtitle-2 {
+        font-size: 15px;
+        margin: 0 3%;
+    }
+    .main-partners-2 {
+        height: 389px;
+    }
+    .main-partners-2 div {
+        width: auto;
+    }
+    .main-partners-2 img {
+        width: 136px;
+        height: 75px;
+    }
+    .main-partners-2 span {
+        font-size: 14px;
+    }
+    .main-partners-2-title {
+        font-size: 15px;
+    }
+    .main-partners-2-subtitle {
+        font-size: 14px;
+        margin: 0 3%;
+    }
+    .main-partners-3 div {
+        width: auto;
+    }
+    .main-partners-3 img {
+        width: 136px;
+        height: 75px;
+    }
+    .main-partners-3-title {
+        font-size: 15px;
+    }
+    .main-partners-3-subtitle {
+        font-size: 14px;
+        margin: 0 3%;
+    }
+    .main-partners-4 div {
+        width: auto;
+    }
+    .main-partners-4 img {
+        width: 136px;
+        height: 75px;
+    }
+    .main-partners-4-title {
+        font-size: 15px;
+    }
+    .main-partners-4-subtitle-1 {
+        font-size: 14px;
+        margin: 0 3%;
+    }
+    .main-partners-4-subtitle-2 {
+        font-size: 14px;
+    }
+    .main-partners-4-list-items {
+        font-size: 14px;
+    }
+    .main-partners-rows-button {
+        font-size: 1rem;
+    }
+    .main-forecast {
+        margin-bottom: 60px;
+    }
+    .main-forecast-title {
+        font-size: 18px;
+    }
+    .main-forecast-column-1-title {
+        font-size: 16px;
+    }
+    .main-forecast-column-1-subtitle {
+        font-size: 14px;
+    }
+    .main-forecast-column-2 {
+        margin-right: 1rem;
+    }
+    .main-forecast-column-2-title {
+        font-size: 16px;
+    }
+    .main-forecast-column-2-subtitle {
+        font-size: 14px;
+    }
+    .main-forecast-column-3-title {
+        font-size: 16px;
+    }
+    .main-forecast-column-3-subtitle {
+        font-size: 14px;
+    }
+    .main-forecast-column-4-title {
+        font-size: 16px;
+    }
+    .main-forecast-column-4-subtitle {
+        font-size: 14px;
+    }
+    .main-management-people-job-title {
+        font-size: 15px;
+    }
+    .main-management-people-name {
+        font-size: 22px;
+    }
+    .main-management-people-experience {
+        font-size: 15px;
+    }
+    .main-management-people-conditions {
+        font-size: 14px;
+    }
+    .main-management-people-pros {
+        font-size: 14px;
+    }
+    .main-management-text-into-img {
+        margin: 0 5% 3% 5%;
+    }
+    .main-management-text {
+        font-size: 12px;
+        margin-left: 1rem;
+        left: 15%;
+        top: 94%;
+    }
+    .footer-left-sec {
+        flex-direction: column;
+    }
+    .footer-left-sec img {
+        width: 120px;
+    }
+    .footer-img-text {
+        font-size: 15px;
+        margin-right: 0;
+        margin-left: -1.8rem;
+    }
+    .footer-left-sec a {
+        margin-bottom: 1.5rem;
+    }
+    .footer-basement {
+        flex-direction: column-reverse;
+    }
+    .footer-info {
+        font-size: 14px;
+        text-align: center;
+    }
+    .footer-basement-left-sect {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-basement-left-sect-text {
+        font-size: 12px;
+        width: 280px;
+    }
+    .footer-basement-right-sect a {
+        display: block;
+        font-size: 12px;
+        margin-right: 0;
+        margin-bottom: 0.3rem;
+    }
+    .footer-basement-right-sect a:nth-child(2) {
+        margin-bottom: 0;
     }
 }
