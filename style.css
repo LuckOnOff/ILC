@@ -61,8 +61,36 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .header-right-sec-phone-block {
+    display: none;
+    transition: 0.2s linear;
+}
+.header-right-sec-phone-block-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    width: 180px;
+    height: 40px;
+    background: #273895;
+    margin-right: 1rem;
+    border-radius: 7px;
+    z-index: 1;
+    transition: 0.4s linear;
+}
+.header-right-sec-phone-hidden {
+    display: none;
+}
+.header-right-sec-phone-hidden-active {
+    display: block;
+    color: white;
+    padding: 0.5rem;
+}
+.header-right-sec-phone-active {
     display: none;
 }
 .header-right-sec-phone {
@@ -2064,6 +2092,9 @@ ul {
     }    
 }
 @media screen and (max-width: 800px) {
+    .header-right-sec-phone-block-active {
+        margin-right: -2rem;
+    }
     .main-support {
         margin: 48px 10% 0 10%;
     }
@@ -2533,6 +2564,9 @@ ul {
     }
 }
 @media screen and (max-width: 440px) {
+    .header-right-sec-phone-block-active {
+        margin-right: -0.45rem;
+    }
     .header {
         margin: 1rem;
     }
