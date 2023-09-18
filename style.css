@@ -80,6 +80,7 @@ ul {
     border-radius: 7px;
     z-index: 1;
     transition: 0.4s linear;
+    cursor: pointer;
 }
 .header-right-sec-phone-hidden {
     display: none;
@@ -111,15 +112,39 @@ ul {
     display: none;
 }
 .header-menu-nav-active {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     background: #34449C;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 40%;
-    transition: all 0.3s linear;
     z-index: 10;
+}
+.header-button-menu {
+    display: block;
+    margin-right: 2rem;
+    width: 100px;
+    height: 50px;
+}
+.header-menu-nav-list {
+    margin: 4rem 2rem 0 0;
+}
+.header-menu-nav-list-item {
+    margin-bottom: 2rem;
+}
+.header-menu-nav-list-item a {
+    transition: all 0.3s linear;
+}
+.header-menu-nav-list li:nth-child(2) a {
+    color: #fff;
+}
+.header-menu-nav-list-item a:hover {
+    color: #fff;
 }
 .header-tel {
     min-width: 9rem;
@@ -138,6 +163,21 @@ ul {
     transition: 0.3s linear;
 }
 .buttons:hover {
+    background: #1d2761;
+}
+.header-menu-nav-exit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3b4fc2;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin: 1rem 1rem 1rem 0;
+    transition: all 0.3s linear;
+}
+.header-menu-nav-exit:hover {
     background: #1d2761;
 }
 .header-button {
@@ -2052,8 +2092,7 @@ ul {
     }
     .footer-basement-right-sect {
         text-align: center;
-        margin: 0;
-        margin: 1%;
+        margin: 2%;
         width: 100%;
     }
     .footer-basement-left-sect {
@@ -2092,6 +2131,7 @@ ul {
         height: 50px;
         border-radius: 7px;
         background: linear-gradient(326deg, #2641D1 11.53%, #3333A3 74.32%);
+        cursor: pointer;
     }
     .header-right-sec-phone {
         display: block;
@@ -2105,6 +2145,7 @@ ul {
         height: 50px;
         border-radius: 7px;
         background: #DEE6EF;
+        cursor: pointer;
     }
     .header-right-sec-menu {
         display: block;
@@ -3032,8 +3073,7 @@ ul {
     }
     .footer-img-text {
         font-size: 15px;
-        margin-right: 0;
-        margin-left: -1.8rem;
+        margin: 0.3rem 0 0 -1.8rem;
     }
     .footer-left-sec a {
         margin-bottom: 1.5rem;
@@ -3078,5 +3118,13 @@ ul {
     }
     .main-rates-plan-free-more-info-item {
         font-size: 14px;
+    }
+    .footer-basement-right-sect {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .footer-basement-right-sect a:nth-child(2) {
+        margin-left: 0;
     }
 }

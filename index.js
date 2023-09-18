@@ -6,7 +6,6 @@ const menuBlock = document.querySelector('.header-right-sec-menu-block');
 const menuIcon = document.querySelector('.header-right-sec-menu');
 const menuNav = document.querySelector('.header-menu-nav');
 const buttonExit = document.querySelector('.header-menu-nav-exit');
-console.log(menuBlock);
 
 function activePhone() {
     phoneBlock.classList.toggle('header-right-sec-phone-block-active');
