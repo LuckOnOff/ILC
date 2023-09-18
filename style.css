@@ -119,7 +119,7 @@ ul {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     position: fixed;
-    top: -2px;
+    top: 0;
     left: 0;
     height: 100vh;
     width: 40%;
