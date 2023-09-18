@@ -119,9 +119,9 @@ ul {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     position: fixed;
-    top: 0;
+    top: -1px;
     left: 0;
-    height: 100%;
+    height: calc(100vh + 1px);
     width: 40%;
     z-index: 10;
 }
