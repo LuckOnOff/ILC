@@ -6,6 +6,8 @@ const menuBlock = document.querySelector('.header-right-sec-menu-block');
 const menuIcon = document.querySelector('.header-right-sec-menu');
 const menuNav = document.querySelector('.header-menu-nav');
 const buttonExit = document.querySelector('.header-menu-nav-exit');
+const logInWindow = document.querySelector('.logIn-window');
+const logInExit = document.querySelector('.logIn-window-box-exit');
 
 function activePhone() {
     phoneBlock.classList.toggle('header-right-sec-phone-block-active');
@@ -33,3 +35,13 @@ function hiddenMenu() {
     menuNav.classList.remove('header-menu-nav-active');
 }
 buttonExit.addEventListener('click', hiddenMenu);
+
+function openAdv() {
+    logInWindow.classList.add('logIn-window-active')
+}
+setTimeout(openAdv, 5000);
+
+function hiddenAdv() {
+    logInWindow.classList.remove('logIn-window-active')
+}
+logInExit.addEventListener('click', hiddenAdv);
