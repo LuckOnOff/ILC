@@ -12,6 +12,10 @@ const logInForms = document.querySelector('.logIn-window');
 const logInButton = document.querySelector('.logIn-window-forms-button');
 const emailCheck = document.querySelector('.logIn-window-forms-email');
 const passwordCheck = document.querySelector('.logIn-window-forms-password');
+const overlay = document.querySelector('.overlay');
+const body = document.querySelector('body');
+const headerCont = document.querySelector('.header-container');
+const underHeader = document.querySelector('.main-header-flexbox-1');
 
 function activePhone() {
     phoneBlock.classList.toggle('header-right-sec-phone-block-active');
@@ -53,9 +57,13 @@ adsExit.addEventListener('click', hiddenAds);
 function openLogIn(event) {
     if(!event.target.closest('.logIn-window')) {
         logInForms.classList.remove('logIn-window-active')
+        overlay.classList.remove('overlay-active');
+        body.classList.remove('body-active');
     }
     if(event.target.closest('.logIn-button')) {
         logInForms.classList.add('logIn-window-active')
+        overlay.classList.add('overlay-active');
+        body.classList.add('body-active');
     }
 }
 document.addEventListener('click', openLogIn);
@@ -77,3 +85,15 @@ function passwordValid() {
       }
 }
 passwordCheck.addEventListener("input", passwordValid);
+
+function fixedHeader() {
+    if(window.scrollY >= 150) {
+        headerCont.classList.add('header-container-fixed');
+        underHeader.classList.add('main-header-flexbox-1-active');
+    }
+    if(window.scrollY <= 90) {
+        headerCont.classList.remove('header-container-fixed');
+        underHeader.classList.remove('main-header-flexbox-1-active');
+    }
+}
+window.addEventListener("scroll", fixedHeader);
