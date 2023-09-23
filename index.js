@@ -91,7 +91,7 @@ function fixedHeader() {
         headerCont.classList.add('header-container-fixed');
         underHeader.classList.add('main-header-flexbox-1-active');
     }
-    if(window.scrollY <= 90) {
+    if(window.scrollY <= 100) {
         headerCont.classList.remove('header-container-fixed');
         underHeader.classList.remove('main-header-flexbox-1-active');
     }
