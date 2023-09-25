@@ -24,7 +24,7 @@ function activePhone() {
     phoneIcon.classList.toggle('header-right-sec-phone');
     phoneNumber.classList.toggle('header-right-sec-phone-hidden-active');
 }
-phoneBlock.addEventListener('click', activePhone);
+phoneBlock.addEventListener('click', activePhone); /* номер телефона через иконку на мобильных версиях */
 
 function activeMenu() {
     menuBlock.classList.toggle('header-right-sec-menu-block-active');
@@ -33,7 +33,7 @@ function activeMenu() {
     menuIcon.classList.toggle('header-right-sec-menu');
     menuNav.classList.toggle('header-menu-nav-active');
 }
-menuBlock.addEventListener('click', activeMenu);
+menuBlock.addEventListener('click', activeMenu); /* открытие меню */
 
 function hiddenMenu() {
     menuBlock.classList.remove('header-right-sec-menu-block-active');
@@ -42,17 +42,17 @@ function hiddenMenu() {
     menuIcon.classList.add('header-right-sec-menu');
     menuNav.classList.remove('header-menu-nav-active');
 }
-buttonExit.addEventListener('click', hiddenMenu);
+buttonExit.addEventListener('click', hiddenMenu); /* скрытие меню */
 
 function openAds() {
     adsWindow.classList.add('ads-window-active')
 }
-setTimeout(openAds, 5000);
+setTimeout(openAds, 8000); /* задержка перед появлением рекламы */
 
 function hiddenAds() {
     adsWindow.classList.remove('ads-window-active')
 }
-adsExit.addEventListener('click', hiddenAds);
+adsExit.addEventListener('click', hiddenAds); /* функция для закрывания рекламы через крестик */
 
 function openLogIn(event) {
     if(!event.target.closest('.logIn-window')) {
@@ -66,7 +66,7 @@ function openLogIn(event) {
         body.classList.add('body-active');
     }
 }
-document.addEventListener('click', openLogIn);
+document.addEventListener('click', openLogIn); /* функция для открытия и закрытия окна для входа в личный кабинет */
 
 function emailValid() {
     if(emailCheck.validity.typeMismatch) {
@@ -75,7 +75,7 @@ function emailValid() {
         emailCheck.setCustomValidity("");
       }
 }
-emailCheck.addEventListener("input", emailValid);
+emailCheck.addEventListener("input", emailValid); /* функция для поля с почтой, проверка на валидность */
 
 function passwordValid() {
     if(passwordCheck.validity.tooShort) {
@@ -84,9 +84,9 @@ function passwordValid() {
         passwordCheck.setCustomValidity("");
       }
 }
-passwordCheck.addEventListener("input", passwordValid);
+passwordCheck.addEventListener("input", passwordValid); /* функция для поля с паролем, проверка на валидность */
 
-function fixedHeader() {
+/* function fixedHeader() {
     if(window.scrollY >= 150) {
         headerCont.classList.add('header-container-fixed');
         underHeader.classList.add('main-header-flexbox-1-active');
@@ -96,4 +96,4 @@ function fixedHeader() {
         underHeader.classList.remove('main-header-flexbox-1-active');
     }
 }
-window.addEventListener("scroll", fixedHeader);
+window.addEventListener("scroll", fixedHeader); */ /* подумать получше над реализацией фиксированной шапки */
