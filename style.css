@@ -317,8 +317,8 @@ ul {
     pointer-events: none;
     transition: 0.3s linear;
 }
-.logIn-window-forms-email:focus ~ .logIn-window-forms-email-subname,
-.logIn-window-forms-email:not(:placeholder-shown) ~ .logIn-window-forms-email-subname{
+.logIn-window-forms-email:focus + .logIn-window-forms-email-subname,
+.logIn-window-forms-email:not(:placeholder-shown) + .logIn-window-forms-email-subname{
     transform: translateY(-40px) translateX(10px);
     font-size: 90%;
 }
@@ -361,8 +361,8 @@ ul {
     pointer-events: none;
     transition: 0.3s linear;
 }
-.logIn-window-forms-password:focus ~ .logIn-window-forms-password-subname,
-.logIn-window-forms-password:not(:placeholder-shown) ~ .logIn-window-forms-password-subname{
+.logIn-window-forms-password:focus + .logIn-window-forms-password-subname,
+.logIn-window-forms-password:not(:placeholder-shown) + .logIn-window-forms-password-subname{
     transform: translateY(-40px) translateX(10px);
     font-size: 90%;
 }
@@ -1477,7 +1477,7 @@ ul {
     overflow: hidden;
     margin: 0 auto;
     background: linear-gradient(90deg, #273895 0%, rgba(26, 39, 105, 0.00) 100%), url(img/main-partners-img.png), lightgray -22.532px 0.21px / 102.26% 99.938% no-repeat;
-    width: 1640px;
+    width: 1440px;
     max-width: 100%;
     height: 400px;
     margin-bottom: 76px;
@@ -1779,6 +1779,7 @@ ul {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    width: 1440px;
     height: 287px;
     background: #273895;
     margin-bottom: 0px;
