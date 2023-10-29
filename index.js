@@ -9,13 +9,32 @@ const buttonExit = document.querySelector('.header-menu-nav-exit');
 const adsWindow = document.querySelector('.ads-window');
 const adsExit = document.querySelector('.ads-window-box-exit');
 const logInForms = document.querySelector('.logIn-window');
-const logInButton = document.querySelector('.logIn-window-forms-button');
+const logInTitle = document.querySelector('.logIn-window-title-login');
+const logInBodyForms = document.querySelector('.logIn-window-forms');
+const regTitle = document.querySelector('.logIn-window-title-reg');
+const regBodyForms = document.querySelector('.reg-window-forms');
 const emailCheck = document.querySelector('.logIn-window-forms-email');
 const passwordCheck = document.querySelector('.logIn-window-forms-password');
 const overlay = document.querySelector('.overlay');
 const body = document.querySelector('body');
 const headerCont = document.querySelector('.header-container');
 const underHeader = document.querySelector('.main-header-flexbox-1');
+
+function logInSwitchReg() {
+    logInBodyForms.style.display = 'none';
+    regBodyForms.style.display = 'flex';
+    logInTitle.classList.add('logIn-window-title-login-active')
+    regTitle.classList.add('logIn-window-title-reg-active');
+}
+regTitle.addEventListener('click', logInSwitchReg);
+
+function regSwitchLogIn() {
+    logInBodyForms.style.display = 'flex';
+    regBodyForms.style.display = 'none';
+    logInTitle.classList.remove('logIn-window-title-login-active')
+    regTitle.classList.remove('logIn-window-title-reg-active');
+}
+logInTitle.addEventListener('click', regSwitchLogIn);
 
 function activePhone() {
     phoneBlock.classList.toggle('header-right-sec-phone-block-active');

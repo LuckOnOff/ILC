@@ -1,0 +1,20 @@
+<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG Editor - http://github.com/mzalive/SVG Editor/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="122" width="122" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_8">
+   <path stroke="null" stroke-width="0" id="svg_4" fill="#3B1D8F" d="m48.428325,90.283587l15.784389,0l0,5.713827l-20.583714,0l0,-71.994827l4.799325,0l0,66.281z"/>
+   <path stroke="null" stroke-width="0" id="svg_5" fill="#3B1D8F" d="m23.15183,24.002586l-4.799325,0l0,71.994827l4.799325,0l0,-71.994827z"/>
+   <path stroke="null" stroke-width="0" id="svg_6" fill="#3B1D8F" d="m72.744893,60.063453c0,16.633734 11.411754,30.220134 25.383039,30.220134l0,5.713827c-16.744315,0 -30.289012,-16.125865 -30.289012,-35.933961c0.106647,-19.935002 13.651344,-36.060867 30.395659,-36.060867l0,5.713876c-14.077932,0 -25.489686,13.586351 -25.489686,30.346991z"/>
+   <path stroke="null" stroke-width="0" id="svg_7" fill="#3B1D8F" d="m101.647492,59.936547c0,2.285531 -1.493162,4.063193 -3.412913,4.063193c-1.919648,0 -3.41281,-1.777662 -3.41281,-4.063193c0,-2.285531 1.493162,-4.063193 3.41281,-4.063193c1.813104,0 3.412913,1.904568 3.412913,4.063193z"/>
+  </g>
+ </g>
+</svg>

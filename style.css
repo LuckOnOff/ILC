@@ -269,6 +269,10 @@ ul {
     padding: 1rem;
     cursor: pointer;
     border-radius: 8px;
+    transition: all 0.5s;
+}
+.logIn-window-title-login-active {
+    background: #1d2761;
 }
 .logIn-window-title-reg {
     background: #1d2761;
@@ -278,6 +282,10 @@ ul {
     cursor: pointer;
     border-radius: 8px;
     min-width: 150px;
+    transition: all 0.5s;
+}
+.logIn-window-title-reg-active {
+    background: #2641D1
 }
 .logIn-window-forms {
     display: flex;
@@ -322,12 +330,6 @@ ul {
     transform: translateY(-40px) translateX(10px);
     font-size: 90%;
 }
-.logIn-window-forms-password {
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    outline: none;
-}
 .logIn-window-forms-password:focus:valid {
     border: 1px solid green;
 }
@@ -367,6 +369,134 @@ ul {
     font-size: 90%;
 }
 .logIn-window-forms-button {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+}
+.reg-window-forms {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+.reg-window-forms-email-box {
+    position: relative;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+.reg-window-forms-email {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 1rem;
+    background: transparent;
+    border: 1px solid black;
+}
+.reg-window-forms-email:focus + .reg-window-forms-email-subname,
+.reg-window-forms-email:not(:placeholder-shown) + .reg-window-forms-email-subname{
+    transform: translateY(-40px) translateX(10px);
+    font-size: 90%;
+}
+.reg-window-forms-email:focus:valid {
+    border: 1px solid green;
+}
+.reg-window-forms-email:focus:invalid {
+    border: 1px solid red;
+}
+.reg-window-forms-email::placeholder {
+    opacity: 0;
+}
+.reg-window-forms-email-subname {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    color: black;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.3s linear;
+}
+.reg-window-forms-password-box {
+    position: relative;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+.reg-window-forms-password {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 1rem;
+    background: transparent;
+    border: 1px solid black;
+}
+.reg-window-forms-password-subname {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    color: black;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.3s linear;
+}
+.reg-window-forms-password:focus + .reg-window-forms-password-subname,
+.reg-window-forms-password:not(:placeholder-shown) + .reg-window-forms-password-subname{
+    transform: translateY(-40px) translateX(10px);
+    font-size: 90%;
+}
+.reg-window-forms-password:focus:valid {
+    border: 1px solid green;
+}
+.reg-window-forms-password:focus:invalid {
+    border: 1px solid red;
+}
+.reg-window-forms-password::placeholder {
+    opacity: 0;
+}
+.reg-window-forms-password-box-confirm {
+    position: relative;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+.reg-window-forms-password-confirm {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 1rem;
+    background: transparent;
+    border: 1px solid black;
+}
+.reg-window-forms-password-subname-confirm {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    color: black;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.3s linear;
+}
+.reg-window-forms-password-confirm:focus + .reg-window-forms-password-subname-confirm,
+.reg-window-forms-password-confirm:not(:placeholder-shown) + .reg-window-forms-password-subname-confirm{
+    transform: translateY(-40px) translateX(10px);
+    font-size: 90%;
+}
+.reg-window-forms-password-confirm:focus:valid {
+    border: 1px solid green;
+}
+.reg-window-forms-password-confirm:focus:invalid {
+    border: 1px solid red;
+}
+.reg-window-forms-password-confirm::placeholder {
+    opacity: 0;
+}
+.reg-window-forms-button {
     display: block;
     margin: 0 auto;
     width: 200px;
@@ -964,7 +1094,7 @@ ul {
     justify-content: center;
     align-items: start;
     flex-direction: column;
-   padding: 32px 32px 50px 32px;
+    padding: 32px 32px 50px 32px;
     width: 236px;
     height: 342px;
     border-radius: 20px;
@@ -975,8 +1105,8 @@ ul {
 .main-advantages-flexbox-columns-1-title {
     font-weight: 600;
     line-height: 20px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 .main-advantages-flexbox-columns-1-subtitle {
     width: 150px;
@@ -997,8 +1127,8 @@ ul {
     margin-right: 19px;
 }
 .main-advantages-flexbox-columns-2-title {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     font-weight: 600;
     line-height: 20px;
 }
@@ -1021,8 +1151,8 @@ ul {
     margin-right: 19px;
 }
 .main-advantages-flexbox-columns-3-title {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     font-weight: 600;
     line-height: 20px;
 }
@@ -1058,8 +1188,8 @@ ul {
     background: rgba(225, 216, 255, 0.50);
 }
 .main-advantages-flexbox-columns-4-title {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     font-weight: 600;
     line-height: 20px;
 }
@@ -1082,8 +1212,8 @@ ul {
 
 }
 .main-advantages-flexbox-columns-5-title {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     font-weight: 600;
     line-height: 20px;
 }
@@ -1567,7 +1697,7 @@ ul {
     margin-bottom: 12px;
 }
 .main-partners-2 div {
-    margin-left: 64px;
+    margin-left: 86px;
 }
 .main-partners-2 span {
     font-weight: 600;
