@@ -226,9 +226,9 @@ ul {
     background-color: #fff;
     color: white;
     width: 40%;
-    min-width: 250px;
-    max-width: 500px;
-    min-height: 350px;
+    min-width: 270px;
+    max-width: 525px;
+    min-height: 310px;
     max-height: 500px;
     border-radius: 8px;
     animation: transition 0.2s linear;
@@ -290,12 +290,16 @@ ul {
 .logIn-window-forms {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 1rem;
 }
 .logIn-window-forms-email-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 100%;
-    margin-top: 0.5rem;
+    width: 95%;
 }
 .logIn-window-forms-email { 
     width: 100%;
@@ -317,18 +321,19 @@ ul {
 }
 .logIn-window-forms-email-subname {
     position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
+    z-index: 2;
+    left: 10px;
+    top: 10px;
     color: black;
-    padding: 10px;
     pointer-events: none;
-    transition: 0.3s linear;
+    transition: 0.1s linear;
+    padding: 0 5px;
+    background-color: #fff;
 }
 .logIn-window-forms-email:focus + .logIn-window-forms-email-subname,
 .logIn-window-forms-email:not(:placeholder-shown) + .logIn-window-forms-email-subname{
-    transform: translateY(-40px) translateX(10px);
-    font-size: 90%;
+    transform: translateY(-20px);
+    font-size: 80%;
 }
 .logIn-window-forms-password:focus:valid {
     border: 1px solid green;
@@ -340,9 +345,12 @@ ul {
     opacity: 0;
 }
 .logIn-window-forms-password-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 100%;
-    margin-top: 1.5rem;
+    width: 95%;
+    margin-top: 1rem;
 }
 .logIn-window-forms-password {
     width: 100%;
@@ -355,18 +363,19 @@ ul {
 }
 .logIn-window-forms-password-subname {
     position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
+    z-index: 2;
+    left: 10px;
+    top: 10px;
     color: black;
-    padding: 10px;
     pointer-events: none;
-    transition: 0.3s linear;
+    transition: 0.1s linear;
+    padding: 0 5px;
+    background-color: #fff;
 }
 .logIn-window-forms-password:focus + .logIn-window-forms-password-subname,
 .logIn-window-forms-password:not(:placeholder-shown) + .logIn-window-forms-password-subname{
-    transform: translateY(-40px) translateX(10px);
-    font-size: 90%;
+    transform: translateY(-20px);
+    font-size: 80%;
 }
 .logIn-window-forms-button {
     display: block;
@@ -383,9 +392,11 @@ ul {
     margin: 1rem;
 }
 .reg-window-forms-email-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 100%;
-    margin-top: 0.5rem;
+    width: 95%;
 }
 .reg-window-forms-email {
     width: 100%;
@@ -398,8 +409,8 @@ ul {
 }
 .reg-window-forms-email:focus + .reg-window-forms-email-subname,
 .reg-window-forms-email:not(:placeholder-shown) + .reg-window-forms-email-subname{
-    transform: translateY(-40px) translateX(10px);
-    font-size: 90%;
+    transform: translateY(-20px);
+    font-size: 80%;
 }
 .reg-window-forms-email:focus:valid {
     border: 1px solid green;
@@ -412,18 +423,22 @@ ul {
 }
 .reg-window-forms-email-subname {
     position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
+    z-index: 2;
+    left: 10px;
+    top: 10px;
     color: black;
-    padding: 10px;
     pointer-events: none;
-    transition: 0.3s linear;
+    transition: 0.1s linear;
+    padding: 0 5px;
+    background-color: #fff;
 }
 .reg-window-forms-password-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 100%;
-    margin-top: 1.5rem;
+    width: 95%;
+    margin-top: 1rem;
 }
 .reg-window-forms-password {
     width: 100%;
@@ -436,18 +451,19 @@ ul {
 }
 .reg-window-forms-password-subname {
     position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
+    z-index: 2;
+    left: 10px;
+    top: 10px;
     color: black;
-    padding: 10px;
     pointer-events: none;
-    transition: 0.3s linear;
+    transition: 0.1s linear;
+    padding: 0 5px;
+    background-color: #fff;
 }
 .reg-window-forms-password:focus + .reg-window-forms-password-subname,
 .reg-window-forms-password:not(:placeholder-shown) + .reg-window-forms-password-subname{
-    transform: translateY(-40px) translateX(10px);
-    font-size: 90%;
+    transform: translateY(-20px);
+    font-size: 80%;
 }
 .reg-window-forms-password:focus:valid {
     border: 1px solid green;
@@ -459,9 +475,12 @@ ul {
     opacity: 0;
 }
 .reg-window-forms-password-box-confirm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 100%;
-    margin-top: 1.5rem;
+    width: 95%;
+    margin-top: 1rem;
 }
 .reg-window-forms-password-confirm {
     width: 100%;
@@ -474,18 +493,19 @@ ul {
 }
 .reg-window-forms-password-subname-confirm {
     position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
+    z-index: 2;
+    left: 10px;
+    top: 10px;
     color: black;
-    padding: 10px;
     pointer-events: none;
-    transition: 0.3s linear;
+    transition: 0.1s linear;
+    padding: 0 5px;
+    background-color: #fff;
 }
 .reg-window-forms-password-confirm:focus + .reg-window-forms-password-subname-confirm,
 .reg-window-forms-password-confirm:not(:placeholder-shown) + .reg-window-forms-password-subname-confirm{
-    transform: translateY(-40px) translateX(10px);
-    font-size: 90%;
+    transform: translateY(-20px);
+    font-size: 80%;
 }
 .reg-window-forms-password-confirm:focus:valid {
     border: 1px solid green;

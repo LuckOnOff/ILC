@@ -15,15 +15,16 @@ const regTitle = document.querySelector('.logIn-window-title-reg');
 const regBodyForms = document.querySelector('.reg-window-forms');
 const emailCheck = document.querySelector('.logIn-window-forms-email');
 const passwordCheck = document.querySelector('.logIn-window-forms-password');
+const regPassword = document.querySelector('.reg-window-forms-password');
+const regPasswordConfirm = document.querySelector('.reg-window-forms-password-confirm');
 const overlay = document.querySelector('.overlay');
 const body = document.querySelector('body');
-const headerCont = document.querySelector('.header-container');
-const underHeader = document.querySelector('.main-header-flexbox-1');
+const allInput = document.querySelectorAll('.logIn-window input');
 
 function logInSwitchReg() {
     logInBodyForms.style.display = 'none';
     regBodyForms.style.display = 'flex';
-    logInTitle.classList.add('logIn-window-title-login-active')
+    logInTitle.classList.add('logIn-window-title-login-active');
     regTitle.classList.add('logIn-window-title-reg-active');
 }
 regTitle.addEventListener('click', logInSwitchReg);
@@ -31,10 +32,16 @@ regTitle.addEventListener('click', logInSwitchReg);
 function regSwitchLogIn() {
     logInBodyForms.style.display = 'flex';
     regBodyForms.style.display = 'none';
-    logInTitle.classList.remove('logIn-window-title-login-active')
+    logInTitle.classList.remove('logIn-window-title-login-active');
     regTitle.classList.remove('logIn-window-title-reg-active');
 }
 logInTitle.addEventListener('click', regSwitchLogIn);
+
+function clearInput() {
+    for(let i = 0; i < allInput.length; i++){
+        allInput[i].value = '';
+    }
+}
 
 function activePhone() {
     phoneBlock.classList.toggle('header-right-sec-phone-block-active');
@@ -78,6 +85,8 @@ function openLogIn(event) {
         logInForms.classList.remove('logIn-window-active')
         overlay.classList.remove('overlay-active');
         body.classList.remove('body-active');
+        regSwitchLogIn()
+        clearInput()
     }
     if(event.target.closest('.logIn-button')) {
         logInForms.classList.add('logIn-window-active')
@@ -105,14 +114,11 @@ function passwordValid() {
 }
 passwordCheck.addEventListener("input", passwordValid); /* функция для поля с паролем, проверка на валидность */
 
-/* function fixedHeader() {
-    if(window.scrollY >= 150) {
-        headerCont.classList.add('header-container-fixed');
-        underHeader.classList.add('main-header-flexbox-1-active');
-    }
-    if(window.scrollY <= 100) {
-        headerCont.classList.remove('header-container-fixed');
-        underHeader.classList.remove('main-header-flexbox-1-active');
+function passwordConfirm() {
+    if(regPasswordConfirm.value !== regPassword.value) {
+        regPasswordConfirm.setCustomValidity('Пароли не совпадают');
+    }else {
+        regPasswordConfirm.setCustomValidity('');
     }
 }
-window.addEventListener("scroll", fixedHeader); */ /* подумать получше над реализацией фиксированной шапки */
+regPasswordConfirm.addEventListener("input", passwordConfirm); /* проверка на совпадение пароля и подтвержденного пароля */
