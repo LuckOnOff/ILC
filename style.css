@@ -8,7 +8,6 @@
 }
 body {
     background: #F4F7FA;
-    scroll-behavior: smooth;
 }
 .body-active {
     overflow: hidden;
@@ -160,6 +159,29 @@ ul {
     width: 100px;
     height: 50px;
 }
+.absolute-position-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-up {
+    display: none;
+    position: fixed;
+    background: gray;
+    padding: 7px;
+    border-radius: 5px;
+    z-index: 5;
+    right: 10px;
+    bottom: 150px;
+    animation: transition 0.3s linear;
+    transition: opacity 0.3s linear;
+}
+.arrow-up.active {
+    display: flex;
+}
+.arrow-up.active:hover {
+    opacity: 1;
+}
 .ads-window {
     display: none;
 }
@@ -181,10 +203,12 @@ ul {
 @keyframes transition {
     0% {
         opacity: 0;
+        visibility: 0;
     }
   
     100% {
         opacity: 1;
+        visibility: 1;
     }
 }
 .ads-window-box {

@@ -20,6 +20,29 @@ const regPasswordConfirm = document.querySelector('.reg-window-forms-password-co
 const overlay = document.querySelector('.overlay');
 const body = document.querySelector('body');
 const allInput = document.querySelectorAll('.logIn-window input');
+const arrowUp = document.querySelector('.arrow-up');
+
+const oneTenthMaximumY= Math.max(
+    document.body.scrollHeight, document.documentElement.scrollHeight,
+    document.body.offsetHeight, document.documentElement.offsetHeight,
+    document.body.clientHeight, document.documentElement.clientHeight
+) / 10;
+
+document.addEventListener('scroll', () => {
+    if(window.scrollY > maxScrollY) {
+        arrowUp.classList.add('active');
+    } else {
+        arrowUp.classList.remove('active');
+    }
+});
+
+arrowUp.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+});
 
 function logInSwitchReg() {
     logInBodyForms.style.display = 'none';
