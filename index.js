@@ -29,7 +29,7 @@ const oneTenthMaximumY= Math.max(
 ) / 10;
 
 document.addEventListener('scroll', () => {
-    if(window.scrollY > maxScrollY) {
+    if(window.scrollY > oneTenthMaximumY) {
         arrowUp.classList.add('active');
     } else {
         arrowUp.classList.remove('active');
